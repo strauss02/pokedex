@@ -37,9 +37,12 @@ function updateData() {
 }
 
 function getTypes() {
-  let types = '';
+  let typeListEl = document.querySelector('.type-list');
+  typeListEl.innerHTML = '';
   pokeData.types.forEach((item) => {
-    types += `${item.type.name} `;
+    const liEl = document.createElement('li');
+    liEl.textContent = `${item.type.name}`;
+    typeListEl.append(liEl);
   });
   return types;
 }
