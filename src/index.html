@@ -12,6 +12,28 @@
     <title>Pokedex!</title>
 </head>
 <body>
+    <!-- Modal -->
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>more pokemons of this type</p>
+        <ul class="pokemons-of-type">
+
+        </ul>
+    </div>
+
+</div>
+
+
+    <!--  -->
+    
+
     <main>
         <div class="container">
         <div class="left">
@@ -27,17 +49,19 @@
         <div class="right">
 
             <div class="img-box">
-                <img class="image" src="https://secure.img1-fg.wfcdn.com/im/77981853/resize-h755-w755%5Ecompr-r85/8470/84707680/Pokemon+Pikachu+Wall+Decal.jpg" alt="">
+                <img class="info-image" alt="">
             </div>
             <div class="info-box">
                 <h6 class="info name">name</h6>
                 <h6 class="info weight">weight</h6>
                 <h6 class="info height">height</h6>
-                <h6 class="info type">type</h6>
+                <h6 class="info type">types:</h6>
+                <ul class="type-list"></ul>
             </div>
         </div>
         </div>
     </main>
+
 
 </body>
 </html>
