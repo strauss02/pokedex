@@ -44,5 +44,58 @@ function getTypes() {
     liEl.textContent = `${item.type.name}`;
     typeListEl.append(liEl);
   });
-  return types;
+
+  return typeListEl;
+}
+
+function showBack() {
+  infoImg.src = pokeData.sprites.back_default;
+}
+function showFront() {
+  infoImg.src = pokeData.sprites.front_default;
+}
+
+function inform(err) {
+  console.log(err);
+  alert(err.response.data);
+}
+
+async function showTypeList(e) {
+  const typeName = e.target.innerText;
+  let typeURL = '';
+  let pokemonsOfType = [];
+  pokeData.types.forEach((item) => {
+    if (item.type.name === typeName) {
+      console.log(item.type.url);
+      typeURL = item.type.url;
+      return;
+    }
+  });
+  await axios.get(typeURL).then((res) => (pokemonsOfType = res.data.pokemon));
+  //   console.log(pokemonsOfType);
+  pokemonsOfType.forEach((item) => {
+    pokemonsOfType.push(item);
+  });
+
+  //
+
+  let morePokemonsEl = document.querySelector('.pokemons-of-type');
+  morePokemonsEl.innerHTML = '';
+  pokemonsOfType.forEach((item) => {
+    const liEl = document.createElement('li');
+    liEl.textContent = `${item.pokemon.name}`;
+    morePokemonsEl.append(liEl);
+    console.log(item.pokemon.name);
+  });
+  showModal();
+}
+
+function handleListClick(e) {
+  console.log(e.target.textContent);
+  const otherPokemon = e.target.textContent;
+  closeModal();
+  searchInput.value = otherPokemon;
+  searchPokemon();
+}
+
 }
