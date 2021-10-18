@@ -7,9 +7,13 @@ Welcome to the pokedex. This app allows you to search pokemon according to their
 
 # How to use:
  Open https://strauss02.github.io/pokedex/src
+ 
  type in the search bar a pokemon name or ID.
+ 
  info about the pokemon will appear on the screen of the pokedex.
+ 
  to see more pokemons of a type, click that type, and a modal will appear.
+ 
  click on any of the pokemons in the list to see info about it.
  
 
