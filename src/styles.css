@@ -91,6 +91,19 @@ main {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.type-list {
+  font-weight: 1000;
+  border: green 1px solid;
+  border-radius: 10px;
+}
+
+.type-list > li:hover,
+.pokemons-of-type > li:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.116);
+  cursor: pointer;
+}
+
 /*  */
 
 .pokemons-of-type {
