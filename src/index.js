@@ -15,3 +15,8 @@ async function searchPokemon() {
 
 let pokeData = {};
 
+const infoName = document.querySelector('.name');
+const infoWeight = document.querySelector('.weight');
+const infoHeight = document.querySelector('.height');
+const infoType = document.querySelector('.type');
+
