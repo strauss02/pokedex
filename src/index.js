@@ -30,8 +30,8 @@ let pokeData = {};
 
 function updateData() {
   infoName.innerText = `Name: ${pokeData.name}`;
-  infoWeight.innerText = `Weight: ${pokeData.weight}`;
-  infoHeight.innerText = `Height: ${pokeData.height}`;
+  infoWeight.innerText = `Weight: ${pokeData.weight / 10} kg`;
+  infoHeight.innerText = `Height: ${pokeData.height / 10} m`;
   getTypes();
   infoImg.src = pokeData.sprites.front_default;
 }
@@ -41,6 +41,7 @@ function getTypes() {
   typeListEl.innerHTML = '';
   pokeData.types.forEach((item) => {
     const liEl = document.createElement('li');
+    liEl.classList.add('info');
     liEl.textContent = `${item.type.name}`;
     typeListEl.append(liEl);
   });
@@ -66,7 +67,6 @@ async function showTypeList(e) {
   let pokemonsOfType = [];
   pokeData.types.forEach((item) => {
     if (item.type.name === typeName) {
-      console.log(item.type.url);
       typeURL = item.type.url;
       return;
     }

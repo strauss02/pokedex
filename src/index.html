@@ -22,7 +22,7 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close">&times;</span>
-        <p>more pokemons of this type</p>
+        <p>more pokemons of this type:</p>
         <ul class="pokemons-of-type">
 
         </ul>
@@ -38,16 +38,17 @@
         <div class="container">
         <div class="left">
             <div class="input-box">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">pokemon name</span>
-                    <input type="text" class="search form-control" aria-label="Sizing example input"
+                <div class="input-group .bg-dark mb-3">
+                    <span class="input-group-text " id="inputGroup-sizing-default">pokemon name / ID</span>
+                    <input type="text" class="bg-dark search form-control" aria-label="Sizing example input" placeholder="Enter pokemon name..."
                         aria-describedby="inputGroup-sizing-default">
                 </div>
-                    <button type="button" class="search-btn btn btn-primary">Search</button>
+                    <button type="button" class="search-btn btn btn-dark">Search</button>
             </div>
         </div>
         <div class="right">
 
+            <div class="screen">
             <div class="img-box">
                 <img class="info-image" alt="">
             </div>
@@ -57,6 +58,7 @@
                 <h6 class="info height">height</h6>
                 <h6 class="info type">types:</h6>
                 <ul class="type-list"></ul>
+            </div>
             </div>
         </div>
         </div>
