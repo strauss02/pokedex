@@ -29,9 +29,9 @@ async function searchPokemon() {
 let pokeData = {};
 
 function updateData() {
-  infoName.innerText = pokeData.name;
-  infoWeight.innerText = pokeData.weight;
-  infoHeight.innerText = pokeData.height;
+  infoName.innerText = `Name: ${pokeData.name}`;
+  infoWeight.innerText = `Weight: ${pokeData.weight}`;
+  infoHeight.innerText = `Height: ${pokeData.height}`;
   getTypes();
   infoImg.src = pokeData.sprites.front_default;
 }

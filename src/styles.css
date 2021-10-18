@@ -42,7 +42,7 @@ img {
   height: 100%;
   width: 40%;
   background-color: rgb(146, 30, 30);
-  border: 5px solid black;
+  border: 5px solid rgba(0, 0, 0, 0.383);
 }
 
 .right {
@@ -51,6 +51,14 @@ img {
   justify-content: center;
   align-content: center;
   align-items: center;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
 }
 
 /*  */
