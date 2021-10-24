@@ -99,7 +99,8 @@ main {
 }
 
 .type-list > li:hover,
-.pokemons-of-type > li:hover {
+.pokemons-of-type > li:hover,
+.pokemons-caught > li:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.116);
   cursor: pointer;
@@ -109,6 +110,18 @@ main {
   margin: 1rem;
   display: flex;
   justify-content: center;
+}
+
+.form-control {
+  color: rgb(136, 136, 136);
+}
+
+.username-input:focus {
+  color: rgb(119, 119, 119);
+}
+
+.alert {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .catch-button,
@@ -124,7 +137,8 @@ main {
 }
 
 /* The Modal (background) */
-.modal {
+.modal,
+.modal-caught {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
