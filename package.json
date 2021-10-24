@@ -1,0 +1,22 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "In this task you will build your own pokédex!\r Read,learn and use https://pokeapi.co/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strauss02/pokedex.git"
+  },
+  "author": "ahmed <strauss02@hotmail.co.il>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strauss02/pokedex/issues"
+  },
+  "homepage": "https://github.com/strauss02/pokedex#readme",
+  "dependencies": {
+    "axios": "^0.23.0"
+  }
+}
